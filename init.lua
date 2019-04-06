@@ -33,7 +33,10 @@ gunslinger.register_gun("gunslinger_rangedweapons:g36", {
 	range = 200,
 	base_spread = 5,
 	max_spread = 200,
-	ammo = "gunslinger_rangedweapons:bullet_556mm 30",
+	magazine = true,
+	vertical_recoil = 10,
+	horizontal_recoil = 10,
+	ammo = "gunslinger_rangedweapons:mag_stanag",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:m16", {
@@ -72,7 +75,10 @@ gunslinger.register_gun("gunslinger_rangedweapons:scar", {
 	range = 200,
 	base_spread = 5,
 	max_spread = 200,
-	ammo = "gunslinger_rangedweapons:bullet_556mm 30",
+	magazine = true,
+	vertical_recoil = 10,
+	horizontal_recoil = 10,
+	ammo = "gunslinger_rangedweapons:mag_stanag",
 	fire_sound = "rangedweapons_smg"
 })
 
