@@ -462,13 +462,6 @@ minetest.register_craftitem("gunslinger_rangedweapons:bullet_308mm", {
 minetest.register_tool("gunslinger_rangedweapons:mag_stanag", {
 	description = "STANAG Magazine",
 	inventory_image = "rangedweapons_stanag.png",
-	on_use = function(itemstack, user, pointed_thing)
-		itemstack:add_wear(65534/30)
-		if itemstack:get_wear() > 65534 then
-			itemstack:set_wear(65534)
-		end
-		return itemstack
-	end,
 })
 
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_stanag", "gunslinger_rangedweapons:bullet_556mm", 30)
