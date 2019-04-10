@@ -420,7 +420,7 @@ gunslinger.register_gun("gunslinger_rangedweapons:tec9", {
 	mode = "semi-automatic",
 	base_dmg = 5,
 	fire_rate = 4,
-	clip_size = 15,
+	clip_size = 30,
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
