@@ -15,7 +15,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:ak47", {
 	range = 200,
 	base_spread = 5,
 	max_spread = 200,
-	ammo = "gunslinger_rangedweapons:bullet_556mm 30",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_ak47",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:g36", {
@@ -99,7 +100,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:vector", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 100,
-	ammo = "gunslinger_rangedweapons:bullet_10mm 30",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:mp5", {
@@ -117,7 +119,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:mp5", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 100,
-	ammo = "gunslinger_rangedweapons:bullet_10mm 30",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:mp40", {
@@ -135,7 +138,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:mp40", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 100,
-	ammo = "gunslinger_rangedweapons:bullet_10mm 30",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:ump", {
@@ -153,7 +157,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:ump", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 100,
-	ammo = "gunslinger_rangedweapons:bullet_10mm 30",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_smg"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:uzi", {
@@ -171,7 +176,9 @@ gunslinger.register_gun("gunslinger_rangedweapons:uzi", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 100,
-	ammo = "gunslinger_rangedweapons:bullet_10mm 30",
+	magazine = true,
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_smg"
 })
 
@@ -192,7 +199,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:m60", {
 	range = 150,
 	base_spread = 20,
 	max_spread = 200,
-	ammo = "gunslinger_rangedweapons:bullet_762mm 100",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_m60",
 	fire_sound = "rangedweapons_machinegun"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:rpk", {
@@ -212,7 +220,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:rpk", {
 	max_spread = 200,
 	vertical_recoil = 10,
 	horizontal_recoil = 4,
-	ammo = "gunslinger_rangedweapons:bullet_762mm 100",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_rpk",
 	fire_sound = "rangedweapons_machinegun"
 })
 
@@ -316,8 +325,9 @@ gunslinger.register_gun("gunslinger_rangedweapons:m200", {
 	max_spread = 200,
 	vertical_recoil = 80,
 	horizontal_recoil = 8,
+	magazine = true,
 	scope = "firearms_crosshair_sniper_scope.png",
-	ammo = "gunslinger_rangedweapons:bullet_308mm",
+	ammo = "gunslinger_rangedweapons:mag_sniper",
 	fire_sound = "rangedweapons_rifle_b"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:svd", {
@@ -337,8 +347,9 @@ gunslinger.register_gun("gunslinger_rangedweapons:svd", {
 	max_spread = 200,
 	vertical_recoil = 80,
 	horizontal_recoil = 8,
+	magazine = true,
 	scope = "firearms_crosshair_sniper_scope.png",
-	ammo = "gunslinger_rangedweapons:bullet_308mm",
+	ammo = "gunslinger_rangedweapons:mag_sniper",
 	fire_sound = "rangedweapons_rifle_b"
 })
 
@@ -413,7 +424,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:tec9", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_9mm 15",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_smg",
 	fire_sound = "rangedweapons_machine_pistol"
 })
 gunslinger.register_gun("gunslinger_rangedweapons:luger", {
@@ -461,7 +473,36 @@ minetest.register_craftitem("gunslinger_rangedweapons:bullet_308mm", {
 
 minetest.register_tool("gunslinger_rangedweapons:mag_stanag", {
 	description = "STANAG Magazine",
-	inventory_image = "rangedweapons_stanag.png",
+	inventory_image = "rangedweapons_stanag_mag.png",
 })
-
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_stanag", "gunslinger_rangedweapons:bullet_556mm", 30)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_ak47", {
+	description = "AK47 Magazine",
+	inventory_image = "rangedweapons_ak47_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_ak47", "gunslinger_rangedweapons:bullet_762mm", 30)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_m60", {
+	description = "M60 Magazine",
+	inventory_image = "rangedweapons_m60_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_m60", "gunslinger_rangedweapons:bullet_762mm", 100)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_rpk", {
+	description = "RPK Drum Magazine",
+	inventory_image = "rangedweapons_rpk_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_rpk", "gunslinger_rangedweapons:bullet_762mm", 100)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_smg", {
+	description = "SMG Magazine",
+	inventory_image = "rangedweapons_smg_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_smg", "gunslinger_rangedweapons:bullet_10mm", 30)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_sniper", {
+	description = "Sniper Magazine",
+	inventory_image = "rangedweapons_sniper_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_sniper", "gunslinger_rangedweapons:bullet_308mm", 10)
