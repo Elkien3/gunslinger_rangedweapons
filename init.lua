@@ -516,7 +516,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:beretta", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_9mm 15",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_9mm",
 	fire_sound = "rangedweapons_beretta"
 })
 minetest.register_craft({
@@ -543,7 +544,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:glock17", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_9mm 15",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_9mm",
 	fire_sound = "rangedweapons_glock"
 })
 minetest.register_craft({
@@ -570,7 +572,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:makarov", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_9mm 15",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_makarov",
 	fire_sound = "rangedweapons_makarov"
 })
 minetest.register_craft({
@@ -625,7 +628,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:luger", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_9mm 15",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_makarov",
 	fire_sound = "rangedweapons_makarov"
 })
 minetest.register_craft({
@@ -679,7 +683,8 @@ gunslinger.register_gun("gunslinger_rangedweapons:deagle", {
 	range = 200,
 	base_spread = 20,
 	max_spread = 80,
-	ammo = "gunslinger_rangedweapons:bullet_357",
+	magazine = true,
+	ammo = "gunslinger_rangedweapons:mag_deagle",
 	fire_sound = "rangedweapons_deagle"
 })
 minetest.register_craft({
@@ -821,3 +826,21 @@ minetest.register_tool("gunslinger_rangedweapons:mag_sniper", {
 	inventory_image = "rangedweapons_sniper_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_sniper", "gunslinger_rangedweapons:bullet_308mm", 10)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_9mm", {
+	description = "9mm Pistol Magazine",
+	inventory_image = "rangedweapons_9mm_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_9mm", "gunslinger_rangedweapons:bullet_9mm", 15)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_makarov", {
+	description = "Small 9mm Magazine",
+	inventory_image = "rangedweapons_makarov_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_makarov", "gunslinger_rangedweapons:bullet_9mm", 7)
+
+minetest.register_tool("gunslinger_rangedweapons:mag_deagle", {
+	description = "Desert Eagle Magazine",
+	inventory_image = "rangedweapons_deagle_mag.png",
+})
+gunslinger.register_magazine("gunslinger_rangedweapons:mag_deagle", "gunslinger_rangedweapons:bullet_357", 9)
