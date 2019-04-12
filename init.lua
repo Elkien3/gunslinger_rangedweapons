@@ -796,51 +796,123 @@ minetest.register_tool("gunslinger_rangedweapons:mag_stanag", {
 	inventory_image = "rangedweapons_stanag_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_stanag", "gunslinger_rangedweapons:bullet_556mm", 30)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_stanag',
+	recipe = {
+		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'dye:grey', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_ak47", {
 	description = "AK47 Magazine",
 	inventory_image = "rangedweapons_ak47_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_ak47", "gunslinger_rangedweapons:bullet_762mm", 30)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_ak47',
+	recipe = {
+		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'dye:black', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_m60", {
 	description = "M60 Magazine",
 	inventory_image = "rangedweapons_m60_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_m60", "gunslinger_rangedweapons:bullet_762mm", 100)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_m60',
+	recipe = {
+		{'', '', ''},
+		{'default:steel_ingot', 'dye:dark_green', 'default:steel_ingot'},
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_rpk", {
 	description = "RPK Drum Magazine",
 	inventory_image = "rangedweapons_rpk_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_rpk", "gunslinger_rangedweapons:bullet_762mm", 100)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_rpk',
+	recipe = {
+		{'', '', ''},
+		{'default:steel_ingot', 'dye:black', 'default:steel_ingot'},
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_smg", {
 	description = "SMG Magazine",
 	inventory_image = "rangedweapons_smg_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_smg", "gunslinger_rangedweapons:bullet_10mm", 30)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_smg',
+	recipe = {
+		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'dye:dark_grey', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_sniper", {
 	description = "Sniper Magazine",
 	inventory_image = "rangedweapons_sniper_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_sniper", "gunslinger_rangedweapons:bullet_308mm", 10)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_sniper',
+	recipe = {
+		{'', '', ''},
+		{'homedecor:plastic_sheeting', 'dye:black', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_9mm", {
 	description = "9mm Pistol Magazine",
 	inventory_image = "rangedweapons_9mm_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_9mm", "gunslinger_rangedweapons:bullet_9mm", 15)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_9mm',
+	recipe = {
+		{'', '', ''},
+		{'homedecor:plastic_sheeting', 'dye:dark_grey', 'homedecor:plastic_sheeting'},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_makarov", {
 	description = "Small 9mm Magazine",
 	inventory_image = "rangedweapons_makarov_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_makarov", "gunslinger_rangedweapons:bullet_9mm", 7)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_makarov',
+	recipe = {
+		{'', '', ''},
+		{'', 'dye:dark_grey', ''},
+		{'homedecor:plastic_sheeting', 'default:steel_ingot', 'homedecor:plastic_sheeting'},
+	}
+})
 
 minetest.register_tool("gunslinger_rangedweapons:mag_deagle", {
 	description = "Desert Eagle Magazine",
 	inventory_image = "rangedweapons_deagle_mag.png",
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_deagle", "gunslinger_rangedweapons:bullet_357", 9)
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:mag_makarov',
+	recipe = {
+		{'', '', ''},
+		{'default:steel_ingot', 'dye:dark_grey', 'default:steel_ingot'},
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+	}
+})
