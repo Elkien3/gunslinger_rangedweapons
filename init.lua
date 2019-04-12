@@ -637,6 +637,60 @@ minetest.register_craft({
 	}
 })
 
+gunslinger.register_gun("gunslinger_rangedweapons:python", {
+	itemdef = {
+		description = "Python Revolver",
+		inventory_image = "rangedweapons_python.png",
+		wield_image = "rangedweapons_python.png",
+		--wield_scale = {x = 4, y = 4, z = 1}
+	},
+
+	mode = "manual",
+	base_dmg = 5,
+	fire_rate = 4,
+	clip_size = 1,
+	range = 200,
+	base_spread = 20,
+	max_spread = 80,
+	ammo = "gunslinger_rangedweapons:bullet_357",
+	fire_sound = "rangedweapons_revolver"
+})
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:python 1 65534',
+	recipe = {
+{'moreores:silver_ingot', 'default:diamond', 'default:mese_crystal_fragment'},
+{'moreores:silver_ingot', 'default:diamond', 'moreores:silver_ingot'},
+		{'', 'default:mese_crystal', 'default:tree'},
+	}
+})
+
+gunslinger.register_gun("gunslinger_rangedweapons:deagle", {
+	itemdef = {
+		description = "Desert Eagle Pistol",
+		inventory_image = "rangedweapons_deagle.png",
+		wield_image = "rangedweapons_deagle.png",
+		--wield_scale = {x = 4, y = 4, z = 1}
+	},
+
+	mode = "semi-automatic",
+	base_dmg = 5,
+	fire_rate = 4,
+	clip_size = 9,
+	range = 200,
+	base_spread = 20,
+	max_spread = 80,
+	ammo = "gunslinger_rangedweapons:bullet_357",
+	fire_sound = "rangedweapons_deagle"
+})
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:deagle',
+	recipe = {
+		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+		{'default:steel_ingot', 'default:diamond', 'homedecor:plastic_sheeting'},
+		{'', '', 'homedecor:plastic_sheeting'},
+	}
+})
+
 --Bullets
 
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_556mm", {
@@ -675,6 +729,19 @@ minetest.register_craft({
 		{'default:steel_ingot', '', ''},
 		{'tnt:gunpowder', '', ''},
 		{'default:copper_ingot', '', ''},
+	}
+})
+
+minetest.register_craftitem("gunslinger_rangedweapons:bullet_357", {
+	description = ".357 Heavy Pistol round",
+	inventory_image = "rangedweapons_357.png",
+})
+minetest.register_craft({
+	output = 'gunslinger_rangedweapons:bullet_357 15',
+	recipe = {
+		{'default:copper_ingot', '', ''},
+		{'tnt:gunpowder', '', ''},
+		{'default:gold_ingot', '', ''},
 	}
 })
 
