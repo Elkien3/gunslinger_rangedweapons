@@ -797,7 +797,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_stanag", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_stanag", "gunslinger_rangedweapons:bullet_556mm", 30)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_stanag',
+	output = 'gunslinger_rangedweapons:mag_stanag 1 65534',
 	recipe = {
 		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
 		{'homedecor:plastic_sheeting', 'dye:grey', 'homedecor:plastic_sheeting'},
@@ -811,7 +811,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_ak47", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_ak47", "gunslinger_rangedweapons:bullet_762mm", 30)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_ak47',
+	output = 'gunslinger_rangedweapons:mag_ak47 1 65534',
 	recipe = {
 		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
 		{'homedecor:plastic_sheeting', 'dye:black', 'homedecor:plastic_sheeting'},
@@ -825,7 +825,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_m60", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_m60", "gunslinger_rangedweapons:bullet_762mm", 100)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_m60',
+	output = 'gunslinger_rangedweapons:mag_m60 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'default:steel_ingot', 'dye:dark_green', 'default:steel_ingot'},
@@ -839,7 +839,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_rpk", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_rpk", "gunslinger_rangedweapons:bullet_762mm", 100)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_rpk',
+	output = 'gunslinger_rangedweapons:mag_rpk 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'default:steel_ingot', 'dye:black', 'default:steel_ingot'},
@@ -853,7 +853,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_smg", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_smg", "gunslinger_rangedweapons:bullet_10mm", 30)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_smg',
+	output = 'gunslinger_rangedweapons:mag_smg 1 65534',
 	recipe = {
 		{'homedecor:plastic_sheeting', '', 'homedecor:plastic_sheeting'},
 		{'homedecor:plastic_sheeting', 'dye:dark_grey', 'homedecor:plastic_sheeting'},
@@ -867,7 +867,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_sniper", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_sniper", "gunslinger_rangedweapons:bullet_308mm", 10)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_sniper',
+	output = 'gunslinger_rangedweapons:mag_sniper 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'homedecor:plastic_sheeting', 'dye:black', 'homedecor:plastic_sheeting'},
@@ -881,7 +881,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_9mm", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_9mm", "gunslinger_rangedweapons:bullet_9mm", 15)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_9mm',
+	output = 'gunslinger_rangedweapons:mag_9mm 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'homedecor:plastic_sheeting', 'dye:dark_grey', 'homedecor:plastic_sheeting'},
@@ -895,7 +895,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_makarov", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_makarov", "gunslinger_rangedweapons:bullet_9mm", 7)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_makarov',
+	output = 'gunslinger_rangedweapons:mag_makarov 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'', 'dye:dark_grey', ''},
@@ -909,7 +909,7 @@ minetest.register_tool("gunslinger_rangedweapons:mag_deagle", {
 })
 gunslinger.register_magazine("gunslinger_rangedweapons:mag_deagle", "gunslinger_rangedweapons:bullet_357", 9)
 minetest.register_craft({
-	output = 'gunslinger_rangedweapons:mag_makarov',
+	output = 'gunslinger_rangedweapons:mag_deagle 1 65534',
 	recipe = {
 		{'', '', ''},
 		{'default:steel_ingot', 'dye:dark_grey', 'default:steel_ingot'},
