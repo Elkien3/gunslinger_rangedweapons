@@ -716,6 +716,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_556mm", {
 	description = "5.56mm Rifle round",
 	inventory_image = "rangedweapons_556mm.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_556mm 75',
@@ -729,6 +730,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_12g", {
 	description = "12 Gauge Buckshot",
 	inventory_image = "rangedweapons_12g.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_12g 12',
@@ -742,6 +744,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_9mm", {
 	description = "9mm Pistol round",
 	inventory_image = "rangedweapons_9mm.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_9mm 30',
@@ -755,6 +758,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_357", {
 	description = ".357 Heavy Pistol round",
 	inventory_image = "rangedweapons_357.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_357 15',
@@ -768,6 +772,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_10mm", {
 	description = "10mm Submachinegun round",
 	inventory_image = "rangedweapons_10mm.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_10mm 60',
@@ -781,6 +786,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_762mm", {
 	description = "7.62mm Heavy Rifle round",
 	inventory_image = "rangedweapons_762mm.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_762mm 50',
@@ -794,6 +800,7 @@ minetest.register_craft({
 minetest.register_craftitem("gunslinger_rangedweapons:bullet_308mm", {
 	description = ".308mm Sniper Rifle round",
 	inventory_image = "rangedweapons_308winchester.png",
+	groups = {gunslinger_ammo=1},
 })
 minetest.register_craft({
 	output = 'gunslinger_rangedweapons:bullet_308mm 15',
